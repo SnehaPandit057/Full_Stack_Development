@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background-color: hsl(210, 50%, 98%); 
+      color: #333; 
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    #main-heading {
+      background: linear-gradient(90deg, rgb(30, 144, 255), #1e90ff); 
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+      border-bottom: 5px solid rgba(0, 0, 0, 0.1);
+    }
+
+   
+    .intro {
+      color: rgba(0, 128, 0, 0.85); 
+      font-size: 18px;
+      text-align: center;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+
+
+    .highlight {
+      font-weight: bold;
+      color: #ff5722; 
+      background: rgba(255, 87, 34, 0.1);
+      padding: 2px 6px;
+      border-radius: 5px;
+    }
+    .highlight::after {
+      content: " ⭐";
+      color: gold;
+    }
+
+    a[target="_blank"] {
+      color: #ff4500;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 2px solid transparent;
+      transition: 0.3s;
+    }
+    a:hover {
+      color: hsl(200, 80%, 40%);
+      border-bottom: 2px solid hsl(200, 80%, 40%);
+    }
+
+    h2 {
+      margin-top: 40px;
+      text-align: center;
+      color: #2e3a59;
+      border-bottom: 2px solid rgba(0,0,0,0.1);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .movies {
+      list-style: none;
+      margin: 20px auto;
+      padding: 0;
+      max-width: 400px;
+    }
+    .movies li {
+      background: #e0f7e9;
+      margin: 8px 0;
+      padding: 10px 15px;
+      border-radius: 8px;
+      color: #2e8b57;
+      position: relative;
+    }
+    .movies li::before {
+      content: "🎬";
+      margin-right: 10px;
+    }
+
+    .movies .special {
+      background: linear-gradient(90deg, #000428, #004e92); 
+      color: white;
+      font-weight: bold;
+      border-left: 5px solid gold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      animation: glow 2s infinite alternate;
+      text-shadow: 0 0 5px #fff, 0 0 10px #80d0ff; 
+    }
+    .movies .special::before {
+      content: "🚀 "; 
+      margin-right: 10px;
+    }
+    @keyframes glow {
+      from { box-shadow: 0 0 10px #004e92; }
+      to { box-shadow: 0 0 20px gold; }
+    }
+
+    .cities {
+      list-style-type: upper-roman; 
+      margin: 20px auto;
+      padding: 0 20px;
+      max-width: 400px;
+      color: rgb(128, 0, 128);
+    }
+    .cities li {
+      background: #f3e5f5;
+      margin: 8px 0;
+      padding: 10px 15px;
+      
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="main-heading">About Our Company</h1>
+  
+  <p class="intro">Hi! This task:2, for second week !</p>
+  
+  <p style="text-align:center;">
+    Our mission is to <span class="highlight">empower people</span> with technology and creativity.
+  </p>
+
+  <p style="text-align:center;">
+    Want to know more? <a href="contact.html" target="_blank">Contact Us</a>
+  </p>
+
+  <h2>Our Favorite Movies</h2>
+  <ul class="movies">
+    <li>Inception</li>
+    <li class="special">Interstellar</li>
+    <li>Avengers</li>
+  </ul>
+
+  <h2>Top Cities</h2>
+  <ol class="cities">
+    <li>Paris</li>
+    <li>New York</li>
+    <li>Tokyo</li>
+  </ol>
+</body>
+</html>
