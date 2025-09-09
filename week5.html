@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>week 5</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f4f4f4;
+    }
+
+    .checkerboard {
+      display: grid;
+      grid-template-columns: repeat(10, 50px);
+      grid-template-rows: repeat(10, 50px);
+      border: 3px solid #333;
+    }
+
+    .square {
+      width: 50px;
+      height: 50px;
+    }
+
+    .square:nth-child(odd) {
+      background: rgb(0, 0, 0);
+    }
+    .square:nth-child(even) {
+      background: rgb(231, 235, 236);
+    }
+
+    .checkerboard > .square:nth-child(20n+11),
+    .checkerboard > .square:nth-child(20n+13),
+    .checkerboard > .square:nth-child(20n+15),
+    .checkerboard > .square:nth-child(20n+17),
+    .checkerboard > .square:nth-child(20n+19) {
+      background: rgb(220, 224, 225);
+    }
+    .checkerboard > .square:nth-child(20n+12),
+    .checkerboard > .square:nth-child(20n+14),
+    .checkerboard > .square:nth-child(20n+16),
+    .checkerboard > .square:nth-child(20n+18),
+    .checkerboard > .square:nth-child(20n+20) {
+      background: rgb(0, 0, 0);
+    }
+  </style>
+</head>
+<body>
+  <div class="checkerboard">
+    <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+    <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+
+    <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+    <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+
+    <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+    <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+
+    <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+    <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+
+    <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+    <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+
+    <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+    <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+
+    <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+    <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+
+    <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+    <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+
+    <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+    <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+
+    <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+    <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+  </div>
+</body>
+</html>
